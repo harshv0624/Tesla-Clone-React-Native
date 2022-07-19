@@ -6,6 +6,11 @@ const style=StyleSheet.create({
         height:Dimensions.get('window').height
       },
 
+      header:{
+        width:'100%',
+        marginTop:10
+      },
+
       buttonContainer:{
         position:'absolute',
         bottom:50,

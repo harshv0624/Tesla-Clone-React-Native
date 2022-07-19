@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './style';
 import {View, Text, ImageBackground} from 'react-native';
 import CustButton from '../CustomButton/Index';
+import Header from '../Header/index'
 const CarRender = (props: any) => {
   const {name,tagline,taglineCTA,image}=props.car
   return (
@@ -10,6 +11,10 @@ const CarRender = (props: any) => {
         source={image}
         style={styles.image}
       />
+      
+      <View style={styles.header}>
+        <Header />
+      </View>
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.subTitle}>{tagline}{' '}
