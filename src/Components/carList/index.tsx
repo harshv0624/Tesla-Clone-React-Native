@@ -7,6 +7,7 @@ const Carlist=()=>{
     return(
         <View style={styleCss.container}>
             <FlatList
+            //horizontal
             data={Cars}
             renderItem={({item}) => <CarRender car={item} />}
             snapToAlignment={'center'}
